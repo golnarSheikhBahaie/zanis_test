@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-
+import 'feature/home/presentation/screen/home_screen.dart';
 import 'feature/splash/presentation/screen/splash_screen.dart';
 import 'injector.dart';
 
@@ -18,9 +17,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: SplashScreen(),
-      // routes: {
-      //   '/home': (context) => HomeScreen(),
-      // },
+      routes: {
+        '/home': (context) => HomeScreen(),
+      },
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
